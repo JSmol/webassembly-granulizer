@@ -1,0 +1,76 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.65"
+
+[lib]
+path = "rs/lib.rs"
+crate-type = ["cdylib"]
+
+[workspace]
+members = [
+  "sampler",
+  "oscilloscope"
+]
+
+[dependencies]
+bytemuck = "1.13.1"
+console_error_panic_hook = "0.1.7"
+js-sys = "0.3.63"
+limelight = "0.1.3"
+limelight-primitives = "0.1.3"
+palette = "0.6.0"
+wasm-bindgen = "0.2.87"
+wasm-bindgen-futures = "0.4.36"
+
+[dependencies.web-sys]
+version = "0.3.63"
+features = [
+  "AudioBuffer",
+  "AudioContext",
+  "AudioParam",
+  "AudioParamMap",
+  "BinaryType",
+  "Blob",
+  "Clipboard",
+  "ClipboardEvent",
+  "CompositionEvent",
+  "CssStyleDeclaration",
+  "DataTransfer",
+  "DataTransferItem",
+  "DataTransferItemList",
+  "Document",
+  "DomRect",
+  "DragEvent",
+  "Element",
+  "Event",
+  "EventListener",
+  "EventTarget",
+  "ExtSRgb",
+  "File",
+  "FileList",
+  "FocusEvent",
+  "HtmlCanvasElement",
+  "HtmlElement",
+  "HtmlInputElement",
+  "InputEvent",
+  "KeyboardEvent",
+  "Location",
+  "MediaQueryList",
+  "MediaQueryListEvent",
+  "MouseEvent",
+  "Navigator",
+  "Node",
+  "Performance",
+  "Storage",
+  "Touch",
+  "TouchEvent",
+  "TouchList",
+  "WebGl2RenderingContext",
+  "WebGlRenderingContext",
+  "WebglDebugRendererInfo",
+  "WheelEvent",
+  "Window",
+  "console",
+]
