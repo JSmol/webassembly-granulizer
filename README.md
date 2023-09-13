@@ -1,4 +1,5 @@
 # Webassembly Audio Sample Granulizer
+[VIDEO](https://youtu.be/lEJ-5T-v-TY)
 
 ## Setup
 This project uses npm and the rust nightly channel.
